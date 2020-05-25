@@ -1,11 +1,13 @@
 1.upto(100) do |x|
-  if x % 15 == 0 then
-    puts "FizzBuzz"
-  elsif x % 3 == 0 then
-    puts "Fizz"
-  elsif x % 5 == 0 then
-    puts "Buzz"
-  else
-    puts x
+  String out = ""
+  if x % 3 == 0 then
+    out += "Fizz"
   end
+  if x % 5 == 0 then
+    out += "Buzz"
+  end
+  if out == "" then
+    out = x
+  end
+    puts(out)
 end

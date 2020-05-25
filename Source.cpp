@@ -2,19 +2,20 @@
 using namespace std;
 
 int main() {
+	string out = "";
 	for (int i = 1; i <= 100; i++) {
 		if (i % 3 == 0) {
-			printf("Fizz\n");
+			out += "Fizz\n";
 		}
 		if (i % 5 == 0) {
-			printf("Buzz\n");
+			out += "Buzz\n";
 		}
-		if (i % 15 == 0) {
-			printf("FizzBuzz\n");
+		if(out == "" ){
+			out = i;
 		}
-		else {
-			printf("%d\n", i);
-		}
+		
+		cout << out;
+
 	}
 
 }
